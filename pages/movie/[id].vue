@@ -41,7 +41,7 @@ const route = useRoute();
 const { data, pending, error } = useAsyncData(
     'movie',
     async () => {
-        const movie = await $fetch(`http://www.omdbapi.com/?i=${route.params.id}&apikey=46438196`);
+        const movie = await $fetch(`https://www.omdbapi.com/?i=${route.params.id}&apikey=46438196`);
         return movie;
     },
 );

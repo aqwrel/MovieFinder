@@ -66,8 +66,8 @@ const isLoadMore = ref(false);
 const carouselType = ref('card');
 
 const getMovies = async () => {
-    const list = await $fetch(`http://www.omdbapi.com/?s=${route.params.query}&apikey=46438196&page=${page.value}`);
-    const movies = await Promise.all(list.Search.map((item) => $fetch(`http://www.omdbapi.com/?i=${item.imdbID}&apikey=46438196`)));
+    const list = await $fetch(`https://www.omdbapi.com/?s=${route.params.query}&apikey=46438196&page=${page.value}`);
+    const movies = await Promise.all(list.Search.map((item) => $fetch(`https://www.omdbapi.com/?i=${item.imdbID}&apikey=46438196`)));
     return {
         movies,
         total: list.totalResults,
