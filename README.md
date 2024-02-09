@@ -1,6 +1,6 @@
 # DEMO
 
-https://main--dreamy-starburst-dc6afb.netlify.app/movie/tt0064418
+https://main--dreamy-starburst-dc6afb.netlify.app
 
 # Nuxt 3 Minimal Starter
 
